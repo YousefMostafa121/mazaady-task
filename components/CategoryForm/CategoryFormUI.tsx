@@ -79,7 +79,7 @@ export function CategoryFormUI({
                   ))}
                 </SelectContent>
               </Select>
-              {formik.errors.mainCategory && (
+              {formik.errors.mainCategory && formik.touched.mainCategory && (
                 <p className="text-sm text-red-500 mt-1">
                   {formik.errors.mainCategory}
                 </p>
@@ -106,7 +106,7 @@ export function CategoryFormUI({
                     ))}
                   </SelectContent>
                 </Select>
-                {formik.errors.subCategory && (
+                {formik.errors.subCategory && formik.touched.subCategory && (
                   <p className="text-sm text-red-500 mt-1">
                     {formik.errors.subCategory}
                   </p>
