@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-[#F6F4F5];
+  }
+}
+
+@layer components {
+  .text-12 {
+    @apply text-[10px] lg:text-[11px] xl:text-[12px];
+  }
+  .text-13 {
+    @apply text-[11px] lg:text-[12px] xl:text-[13px];
+  }
+  .text-14 {
+    @apply text-[10px] lg:text-[13px] xl:text-[14px];
+  }
+  .text-16 {
+    @apply text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px];
+  }
+  .text-18 {
+    @apply text-[12px] lg:text-[14px] xl:text-[18px] 2xl:text-[18px];
+  }
+  .text-20 {
+    @apply text-[14px] lg:text-[16px] xl:text-[18px] 2xl:text-[20px];
+  }
+  .text-24 {
+    @apply text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[24px];
+  }
+  .text-25 {
+    @apply text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[25px];
+  }
+  .text-30 {
+    @apply text-[18px] lg:text-[20px] xl:text-[24px] 2xl:text-[30px];
+  }
+  .text-32 {
+    @apply text-[20px] lg:text-[24px] xl:text-[30px] 2xl:text-[32px];
+  }
+  .text-35 {
+    @apply text-[20px] lg:text-[24px] xl:text-[25px] 2xl:text-[35px];
+  }
+  .text-36 {
+    @apply text-[21px] lg:text-[25px] xl:text-[26px] 2xl:text-[36px];
+  }
+  .text-38 {
+    @apply text-[23px] lg:text-[27px] xl:text-[28px] 2xl:text-[38px];
+  }
+  .text-44 {
+    @apply text-[25px] xl:text-[40px]  2xl:text-[44px];
+  }
+  .text-48 {
+    @apply text-[18px] lg:text-[20px] xl:text-[25px] 2xl:text-[48px];
+  }
+  .text-53 {
+    @apply text-[20px] lg:text-[25px] xl:text-[48px] 2xl:text-[53px];
+  }
+  .text-56 {
+    @apply text-[20px] lg:text-[25px] xl:text-[48px] 2xl:text-[56px];
+  }
+  .text-60 {
+    @apply text-[25px] lg:text-[48px] xl:text-[53px] 2xl:text-[60px];
+  }
+  .text-62 {
+    @apply text-[48px] lg:text-[53px] xl:text-[60px] 2xl:text-[62px];
+  }
+}
